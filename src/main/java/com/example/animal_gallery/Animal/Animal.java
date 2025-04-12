@@ -25,9 +25,11 @@ public class Animal {
     @Temporal(TemporalType.DATE)
     private Date activeDate;
 
+    @Column(nullable = true)
+    private String image;
 
     // Constructors
-    public Animal(int animalId, String name, String description, String breed, double age, Date activeDate){
+    public Animal(int animalId, String name, String description, String species, double age, Date activeDate){
         this.animalId = animalId;
         this.name = name;
         this.description = description;
@@ -36,7 +38,7 @@ public class Animal {
         this.activeDate = activeDate;
     }
 
-    public Animal(String name, String description, String breed, double age, Date activeDate){
+    public Animal(String name, String description, String species, double age, Date activeDate){
         this.name = name;
         this.description = description;
         this.species = species;
@@ -76,7 +78,7 @@ public class Animal {
         return species;
     }
 
-    public void setSpecies(String breed){
+    public void setSpecies(String species){
         this.species = species;
     }
 
@@ -94,5 +96,13 @@ public class Animal {
 
     public void setActiveDate(Date activeDate) {
         this.activeDate = activeDate;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
