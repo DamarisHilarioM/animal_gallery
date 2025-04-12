@@ -1,0 +1,132 @@
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #FFCECE;
+}
+
+
+.table-striped>tbody>tr:nth-child(odd)>td {
+    background-color: #FFCECE80;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td {
+    background-color: #A1DD7040;
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #FFC2C2;
+    border-color: #00000000
+}
+
+.btn-primary:hover {
+    color: #FFFFFF;
+    background-color: #FFA9A9;
+    border-color: #00000000
+}
+
+/* Body Background */
+body{
+    background-color: #FFFBF5;
+}
+
+nav ul a {
+color: #FFFFFF;
+background-color: #FFA9A9;
+    border-radius: 5px;
+}
+
+nav ul a:hover {
+    background-color: #FF8787;
+}
+
+.custom-navbar {
+    background-color: #FFCECE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand {
+    color: #5A5A5A;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #5A5A5A;
+    font-weight: 500;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.custom-navbar .navbar-nav .nav-link.active,
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #FFA9A9;
+}
+
+/* Navbar Toggler Button */
+.navbar-toggler-icon {
+    background-color: #FFA9A9;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+/* Responsive Navigation Adjustments */
+@media (max-width: 768px) {
+    .custom-navbar {
+        background-color: #FFCECE;
+    }
+    .custom-navbar .navbar-nav .nav-link {
+        text-align: center;
+    }
+}
+
+/* View Button (Soft Pink) */
+.btn-view {
+    background-color: #FFC2C2; /* Pastel pink */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: #FFA9A9; /* Slightly darker pink on hover */
+    color: white;
+}
+
+/* Edit Button (Soft Peach) */
+.btn-edit {
+    background-color: #FFD59A; /* Pastel peach */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #FFC078; /* Slightly darker peach on hover */
+    color: white;
+}
+
+/* Delete Button (Soft Red) */
+.btn-delete {
+    background-color: #FF8787; /* Pastel red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #FF5C5C; /* Slightly darker red on hover */
+    color: white;
+}
+
