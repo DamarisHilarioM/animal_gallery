@@ -22,15 +22,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+<!--            Add more buttons-->
             <li class="nav-item">
                 <a class="nav-link active" href="/animals/all">Home</a>
             </li>
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="#">Details</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="#">Third</a>-->
-<!--            </li>-->
         </ul>
     </div>
 </nav>
@@ -52,6 +47,9 @@
 
         <label for="activeDate">Active Date</label>
         <input type="date" id="activeDate" name="activeDate" class="form-control mb-2"/>
+
+        <label for="image">Image</label>
+        <input type="file" id="image" name="image" class="form-control mb-2"/>
 
         <button type="submit" class="btn btn-primary">Save</button>
         <a href="/animals/all" class="btn btn-outline-danger">Cancel</a>

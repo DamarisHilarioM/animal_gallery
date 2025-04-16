@@ -24,12 +24,6 @@
             <li class="nav-item">
                 <a class="nav-link active" href="/animals/all">Home</a>
             </li>
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="#">Details</a>-->
-<!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="#">Third</a>-->
-<!--            </li>-->
         </ul>
     </div>
 </nav>

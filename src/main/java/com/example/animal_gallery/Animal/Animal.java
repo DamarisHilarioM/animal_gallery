@@ -1,7 +1,9 @@
 package com.example.animal_gallery.Animal;
 
 import jakarta.persistence.*;
-import java.util.Date;
+
+import java.time.LocalDate;
+//import java.util.Date;
 
 @Entity
 @Table(name = "animals")
@@ -23,13 +25,13 @@ public class Animal {
     private double age;
 
     @Temporal(TemporalType.DATE)
-    private Date activeDate;
+    private LocalDate activeDate;
 
     @Column(nullable = true)
     private String image;
 
     // Constructors
-    public Animal(int animalId, String name, String description, String species, double age, Date activeDate){
+    public Animal(int animalId, String name, String description, String species, double age, LocalDate activeDate){
         this.animalId = animalId;
         this.name = name;
         this.description = description;
@@ -38,7 +40,7 @@ public class Animal {
         this.activeDate = activeDate;
     }
 
-    public Animal(String name, String description, String species, double age, Date activeDate){
+    public Animal(String name, String description, String species, double age, LocalDate activeDate){
         this.name = name;
         this.description = description;
         this.species = species;
@@ -90,11 +92,11 @@ public class Animal {
         this.age = age;
     }
 
-    public Date getActiveDate() {
+    public LocalDate getActiveDate() {
         return activeDate;
     }
 
-    public void setActiveDate(Date activeDate) {
+    public void setActiveDate(LocalDate activeDate) {
         this.activeDate = activeDate;
     }
 

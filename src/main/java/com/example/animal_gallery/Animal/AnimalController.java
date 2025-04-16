@@ -39,15 +39,6 @@ public class AnimalController {
         model.addAttribute("title", "All Animals");
         return "animal-list";
     }
-//    @GetMapping("/all")
-//    public Object getAllAnimals(Model model){
-//        model.addAttribute("animalList", service.getAllAnimals());
-//        model.addAttribute("title", "All Animals");
-//        return "animal-list";
-//    }
-//    public ResponseEntity<List<Animal>> getAllAnimals() {
-//        return new ResponseEntity<>(service.getAllAnimals(), HttpStatus.OK);
-//    }
 
     /**
      * Get a specific Animal by Id.
